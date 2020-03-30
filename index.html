@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <form
+      oninput="
+    if(a.value && b.value) {
+      c.value=parseInt(a.value)+parseInt(b.value)
+    }
+   
+    "
+    >
+      <input type="tel" id="a" placeholder="enter number 1" /> +
+      <input type="tel" id="b" placeholder="enter number 2" /> =
+      <output id="c"></output>
+    </form>
+  </body>
+</html>
